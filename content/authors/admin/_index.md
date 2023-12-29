@@ -92,6 +92,7 @@ social:
   - icon: cv
     icon_pack: ai
     link: https://drive.google.com/file/d/1y2s1MqqYR0-mG7iAiZktiwuM0_qe_2mE/view?usp=sharing
+    
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
