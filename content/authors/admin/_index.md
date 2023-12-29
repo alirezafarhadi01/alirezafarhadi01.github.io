@@ -25,7 +25,7 @@ organizations:
     url: https://www.iut.ac.ir/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Machine Learning and Theory of Computer Science. I am passionate about exploring diverse challenges within mathematics, blending them seamlessly with emerging inquiries in machine learning and deep learning. My goal is to innovate and create novel solutions in these dynamic fields.
+
 
 # Interests to show in About widget
 interests:
@@ -52,6 +52,11 @@ education:
 skills:
   - name: Technical
     items:
+      - name: Linear algebra, statistics and probability
+        description: ''
+        percent: 95
+        icon: chart-line
+        icon_pack: fas
       - name: Python
         description: ''
         percent: 80
@@ -92,5 +97,6 @@ social:
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+My research interests include Machine Learning and Theory of Computer Science. I am passionate about exploring diverse challenges within mathematics, blending them seamlessly with emerging inquiries in machine learning and deep learning. My goal is to innovate and create novel solutions in these dynamic fields.
+
 {style="text-align: justify;"}
