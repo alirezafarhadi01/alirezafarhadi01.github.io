@@ -57,25 +57,15 @@ skills:
         percent: 95
         icon: chart-line
         icon_pack: fas
-      - name: Python, C++, 
+      - name: Python, C++, C#, Java, MATLAB, Maple, R
         description: ''
         percent: 80
         icon: python
         icon_pack: fab
-       - name: Python, C++, 
-        description: ''
-        percent: 80
-        icon: matlab
-        icon_pack: fab
-      - name: Machine Learning
+      - name: Machine Learning and Deep Learning
         description: ''
         percent: 90
         icon: chart-line
-        icon_pack: fas
-      - name: Machine learning libraries
-        description: ''
-        percent: 70
-        icon: database
         icon_pack: fas
 
 
