@@ -44,7 +44,8 @@ education:
       institution: Isfahan University of Technology
       year: 2023
     - course: Diploma in Mathematics and Physics
-      institution: Allameh Helli High School (1), NODET
+      institution: Allameh Helli High School (1), National Organization for Development of Exceptional Talents
+
       year: 2019
 
 # Skills
