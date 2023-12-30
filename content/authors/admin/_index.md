@@ -29,7 +29,7 @@ organizations:
 
 # Interests to show in About widget
 interests:
-  - Theory of Computer Science
+  - Computer Science
   - Machine Learning
   - Deep Learning
   - Quantum Computing
@@ -43,7 +43,7 @@ education:
     - course: BSc in Mathematics and Computer Science
       institution: Isfahan University of Technology
       year: 2023
-    - course: Diploma in Mathematics Physics
+    - course: Diploma in Mathematics and Physics
       institution: Allameh Helli High School (1), NODET
       year: 2019
 
@@ -57,17 +57,22 @@ skills:
         percent: 95
         icon: chart-line
         icon_pack: fas
-      - name: Python
+      - name: Python, C++, 
         description: ''
         percent: 80
         icon: python
+        icon_pack: fab
+       - name: Python, C++, 
+        description: ''
+        percent: 80
+        icon: matlab
         icon_pack: fab
       - name: Machine Learning
         description: ''
         percent: 90
         icon: chart-line
         icon_pack: fas
-      - name: Machine learning and theory libraries
+      - name: Machine learning libraries
         description: ''
         percent: 70
         icon: database
@@ -98,6 +103,6 @@ social:
 highlight_name: true
 ---
 
-My research interests include Machine Learning and Theory of Computer Science. I am passionate about exploring diverse challenges within mathematics, blending them seamlessly with emerging inquiries in machine learning and deep learning. My goal is to innovate and create novel solutions in these dynamic fields.
+My research interests include Machine Learning and Computer Science. I am passionate about exploring diverse challenges within mathematics, blending them seamlessly with emerging inquiries in machine learning and deep learning. My goal is to innovate and create novel solutions in these dynamic fields.
 
 {style="text-align: justify;"}
