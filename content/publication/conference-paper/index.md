@@ -30,12 +30,12 @@ publication_short: In *ICW*
 abstract: one
 
 # Summary. An optional shortened abstract.
-summary: two
+summary: Dimensionality reduction techniques, notably t-SNE, play a vital role in simplifying and visualizing intricate, high-dimensional data sets. Yet, a common oversight in these methods has been the lack of emphasis on fairness. In this study, we introduce a refined version of the t-SNE algorithm that consciously prioritizes fairness. By making careful adjustments to the foundational calculations of t-SNE, our aim is to ensure that data points corresponding to any groups receive balanced representation in the visual outputs. 
 
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:
