@@ -1,6 +1,6 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: Online Algorithms in Combinatorial Optimization
+summary: This research explores the development and application of advanced online algorithms to solve complex combinatorial problems. By focusing on dynamic, real-time decision-making scenarios, we aim to create algorithms that adaptively optimize solutions as new data becomes available. This work not only enhances understanding of theoretical computational frameworks but also has practical implications across various fields such as logistics, network design, and resource allocation. Our goal is to bridge the gap between theoretical algorithm design and real-world applications, pushing the boundaries of how we solve rapidly changing and data-intensive problems.
 tags:
   - Deep Learning
 date: '2016-04-27T00:00:00Z'
