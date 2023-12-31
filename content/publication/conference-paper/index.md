@@ -27,7 +27,7 @@ publishDate: '2017-01-01T00:00:00Z'
 #publication: In *Hugo Blox Builder Conference*
 #publication_short: In *ICW*
 
-abstract: .
+abstract:  Dimensionality reduction techniques, notably t-SNE, play a vital role in simplifying and visualizing intricate, high-dimensional data sets. Yet, a common oversight in these methods has been the lack of emphasis on fairness. In this study, we introduce a refined version of the t-SNE algorithm that consciously prioritizes fairness. By making careful adjustments to the foundational calculations of t-SNE, our aim is to ensure that data points corresponding to any groups receive balanced representation in the visual outputs. Our comprehensive testing on various datasets establishes the efficacy of our approach. we not only enhance fairness but also achieve this without compromising the overall quality and clarity of the visualizations. This pioneering work not only underscores the significance of embedding fairness into data visualization techniques but also paves the way for embedding ethical considerations more broadly into future machine learning endeavors
 
 # Summary. An optional shortened abstract.
 summary: Dimensionality reduction techniques, notably t-SNE, play a vital role in simplifying and visualizing intricate, high-dimensional data sets. Yet, a common oversight in these methods has been the lack of emphasis on fairness. In this study, we introduce a refined version of the t-SNE algorithm that consciously prioritizes fairness. By making careful adjustments to the foundational calculations of t-SNE, our aim is to ensure that data points corresponding to any groups receive balanced representation in the visual outputs. 
@@ -72,8 +72,8 @@ image:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 #slides: example
----
-
+#---
+#
 #{{% callout note %}}
 #Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
 #{{% /callout %}}
