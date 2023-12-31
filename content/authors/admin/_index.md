@@ -40,12 +40,11 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: BSc in Mathematics and Computer Science
+    - course: Bachelor of Mathematical Sciences and Applications (Minor in Computer Science)
       institution: Isfahan University of Technology
       year: 2023
     - course: Diploma in Mathematics and Physics
       institution: Allameh Helli High School (1), National Organization for Development of Exceptional Talents
-
       year: 2019
 
 # Skills
