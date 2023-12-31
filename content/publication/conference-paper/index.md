@@ -35,7 +35,7 @@ summary: Dimensionality reduction techniques, notably t-SNE, play a vital role i
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:
