@@ -21,18 +21,18 @@ publishDate: '2017-01-01T00:00:00Z'
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+#publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
+#publication: In *Hugo Blox Builder Conference*
+#publication_short: In *ICW*
 
 abstract: .
 
 # Summary. An optional shortened abstract.
 summary: Dimensionality reduction techniques, notably t-SNE, play a vital role in simplifying and visualizing intricate, high-dimensional data sets. Yet, a common oversight in these methods has been the lack of emphasis on fairness. In this study, we introduce a refined version of the t-SNE algorithm that consciously prioritizes fairness. By making careful adjustments to the foundational calculations of t-SNE, our aim is to ensure that data points corresponding to any groups receive balanced representation in the visual outputs. 
 
-tags: []
+#tags: []
 
 # Display this page in the Featured widget?
 featured: true
@@ -82,4 +82,4 @@ image:
 #Create your slides in Markdown - click the _Slides_ button to check out the example.
 #{{% /callout %}}
 
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+#Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
