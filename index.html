@@ -1,0 +1,667 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Alireza Farhadi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #f7f9fb;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+    }
+
+    /* Left column */
+    .sidebar {
+      width: 37%;
+      max-width: 420px;
+      background: #002147;
+      color: white;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow-y: auto;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .sidebar img {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      border: 5px solid white;
+      margin-bottom: 1rem;
+      object-fit: cover;
+      max-width: 100%;
+    }
+    .sidebar h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .sidebar .icons a {
+      color: white;
+      margin: 0 8px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+      text-decoration: none !important;
+    }
+    .sidebar .icons a:hover {
+      color: #ffcc00;
+      text-decoration: none !important;
+    }
+
+.abstract-btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 8px 18px;   
+  background: #ffcc00;
+  color: #002147;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.abstract-btn:hover {
+  background: #002147;
+  color: white;
+}
+
+.abstract-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f1f5f9;
+  border: 1px solid #ddd;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+
+
+    .pdf-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 6px 12px;
+      background: #002147;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      transition: background 0.3s;
+    }
+    .pdf-btn:hover {
+      background: #ffcc00;
+      color: #002147;
+    }
+
+    /* Middle column (content) */
+    .content {
+      margin-left: 37%;
+      width: 50%;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    /* Right column */
+    .rightbar {
+      width: 13%;
+      padding: 1.5rem;
+      background: #eef2f6;
+      box-sizing: border-box;
+    }
+
+    section {
+      margin: 2rem auto;
+    }
+    section h2 {
+      font-family: 'Merriweather', serif;
+      border-bottom: 3px solid #002147;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.3rem;
+      color: #002147;
+      font-size: 1.8rem;
+    }
+
+    .item, .exp, .pub {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .item img, .exp img, .pub img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-right: 1.5rem;
+      max-width: 100%;
+    }
+    .item .details, .exp .details, .pub .details {
+      flex: 1;
+    }
+    .years {
+      color: #555;
+      font-weight: bold;
+      margin-left: 1.5rem;
+      font-size: 1.1rem;
+      white-space: nowrap;
+    }
+    .pub img {
+      border-radius: 8px;
+    }
+    .pub h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.4rem;
+    }
+    .details h3, .details h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: #002147;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #002147;
+      color: white;
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+    }
+
+
+
+    /* 📱 Responsive for mobile */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: none;
+      }
+      .content {
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
+      }
+      .rightbar {
+        display: none; /* Right column hidden in mobile */
+      }
+      section h2 {
+        font-size: 1.4rem;
+      }
+      .details h3, .details h4 {
+        font-size: 1rem;
+      }
+      .years {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    .icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 0.5rem;
+}
+
+/* حالت عادی آیکون‌ها */
+.big-icon {
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+/* حالت hover (وقتی موس روش می‌ره) */
+.big-icon:hover {
+  color: #ffcc00;
+  transform: scale(1.3);
+}
+
+/* --- News Section --- */
+.news-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.25s ease;
+}
+.news-item:hover { transform: translateY(-3px); }
+.news-date {
+  color: #002147;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.news-text {
+  margin-top: 0.3rem;
+  color: #333;
+  font-size: 0.95rem;
+}
+/* --- News Section --- */
+.news-line {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.7rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  transition: background 0.3s;
+}
+.news-line:hover {
+  background: #f9fafc;
+}
+.news-date {
+  color: #002147;
+  font-weight: 600;
+  font-family: 'Roboto Mono', monospace;
+  width: 90px;
+  flex-shrink: 0;
+}
+.news-text {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+  </style>
+</head>
+
+
+
+<body>
+
+<!-- Left column -->
+<div class="sidebar">
+  <img src="ali.png" alt="Alireza Farhadi">
+  <h1>Alireza Farhadi</h1>
+
+  <!-- Email addresses -->
+  <div class="emails" style="margin-top: -0.5rem; text-align: center; line-height: 1.8; margin-bottom: 5mm;">
+    <a href="mailto:farhadi.a01@gmail.com" class="email-link">farhadi.a01@gmail.com</a>
+    <a href="mailto:alirezafarhadi633@gmail.com" class="email-link">alirezafarhadi633@gmail.com</a>
+  </div>
+
+  <div class="icons">
+    <!-- Google Scholar -->
+    <a href="https://scholar.google.com/citations?user=xDWYoQYAAAAJ&hl=en" target="_blank">
+      <i class="ai ai-google-scholar big-icon"></i>
+    </a>
+
+    <!-- Resume PDF -->
+    <a href="https://drive.google.com/file/d/1WMBWF2t55qV1pPiN7k7IwZcutqxJP3CI/view?usp=sharing" target="_blank">
+      <i class="ai ai-cv big-icon"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/alireza-farhadi/" target="_blank">
+      <i class="fab fa-linkedin big-icon"></i>
+    </a>
+
+    <!-- GitHub -->
+    <a href="https://github.com/alirezafarhadi01" target="_blank">
+      <i class="fab fa-github big-icon"></i>
+    </a>
+
+    <!-- Email icon -->
+
+  </div>
+
+  <!-- Intro text under the name -->
+  <p style="margin-top: 1.5rem; font-size: 1rem; line-height: 1.5; text-align: justify; padding: 0 1rem;">
+    Hi, I am a computer science researcher. My recent publications have focused on Large Language Models, Generative AI, and Multi-Agent Systems. However, my expertise and interests are not limited to these areas. I am open to collaborations across broader fields of Artificial Intelligence and Data Science, and I believe that with my experience and an interdisciplinary perspective, I can contribute to addressing diverse and complex computational challenges in new and innovative ways.
+  </p>
+</div>
+
+<!-- CSS for email hover effect -->
+<style>
+  .email-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.95rem;
+  }
+
+  .email-link:hover {
+    transform: scale(1.08);
+  }
+</style>
+
+
+  <!-- Middle column -->
+  <div class="content">
+
+    <!-- Education -->
+    <section>
+      <h2>Education</h2>
+      <div class="item">
+        <img src="AUT.png" alt="AUT">
+        <div class="details">
+          <h3>Master of Science in Computer Science</h3>
+          <p>Amirkabir University of Technology (Tehran Polytechnic)</p>
+        </div>
+        <div class="years">2024 – Present</div>
+      </div>
+      <div class="item">
+        <img src="IUT.png" alt="IUT">
+        <div class="details">
+          <h3>Bachelor of Mathematical Sciences and Applications</h3>
+          <p>Minor in Computer Engineering, Isfahan University of Technology</p>
+        </div>
+        <div class="years">2019 – 2024</div>
+      </div>
+      <div class="item">
+        <img src="NODET.png" alt="NODET">
+        <div class="details">
+          <h3>Diploma in Mathematics and Physics</h3>
+          <p>Allameh Helli High School, National Organization for Development of Exceptional Talents</p>
+        </div>
+        <div class="years">2015 – 2019</div>
+      </div>
+    </section>
+
+<!-- Publications -->
+<section>
+  <h2>Publications</h2>
+
+  <div class="pub">
+    <img src="Brains2.png" alt="Brains vs Bytes">
+    <div class="details">
+      <h4>Brains vs. Bytes: Evaluating LLM Proficiency in Olympiad Mathematics</h4>
+      <span style="color: #006400;">accepted at Conference on Language Modeling (COLM 2025)</span><br>
+
+      <!-- Buttons -->
+      <a href="https://arxiv.org/pdf/2504.01995" target="_blank" class="pdf-btn">PDF</a>
+      <button class="abstract-btn" onclick="toggleAbstract(this)">Summary</button>
+
+      <!-- Abstract box -->
+      <div class="abstract-box" style="display: none;">
+        <p>
+          LLMs still struggle on Olympiad math. Human reviews and an automatic checker show shortcut answers, 
+          not real proofs. We need benchmarks that reward sound reasoning over final answers.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <img src="RefGrader2.png" alt="RefGrader">
+    <div class="details">
+      <h4>RefGrader: Automated Grading of Mathematical Competition Proofs using Agentic Workflows</h4>
+      <span style="color: #006400;">accepted at NeurIPS 2025 Workshop MATH-AI</span><br>
+      <a href="https://arxiv.org/pdf/2510.09021" target="_blank" class="pdf-btn">PDF</a>
+      <button class="abstract-btn" onclick="toggleAbstract(this)">Summary</button>
+
+      <!-- Abstract box -->
+      <div class="abstract-box" style="display: none;">
+        <p>
+          Top LLMs now solve most IMO 2025 problems. We test their proof grading: great at spotting errors, inconsistent on partial credit. 
+          Agentic workflows build rubrics, boosting fairness and human-level agreement.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <img src="CombiGraph2.png" alt="CombiGraph">
+    <div class="details">
+      <h4>CombiGraph-Vis: A Multimodal Olympiad Benchmark for Discrete Mathematical Reasoning</h4>
+      <span style="color: #006400;">accepted at NeurIPS 2025 Workshop MATH-AI</span><br>
+      <a href="https://openreview.net/pdf?id=WvH8ZVw3m9" target="_blank" class="pdf-btn">PDF</a>
+      <button class="abstract-btn" onclick="toggleAbstract(this)">Summary</button>
+
+      <!-- Abstract box -->
+      <div class="abstract-box" style="display: none;">
+        <p>
+          CombiGraph-Vis: 1,135 multimodal discrete-math problems (13 domains; 3 formats; 35% visual) with verified solutions and technique labels. 
+          Models score 16–78% and drop on images/choice-dependence—showing distractor vulnerability. Data and code released.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <img src="IteraGraph.png" alt="IteraGraph">
+    <div class="details">
+      <h4>IteraGraph: Multi-LLM Iterative Answering and Verification on Graphs</h4>
+      <span>Working paper</span><br>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section>
+  <h2>News</h2>
+
+<div class="news-line">
+  <div class="news-date">Oct 25</div>
+  <div class="news-text">
+    Our papers <em>"RefGrader"</em> and <em>"CombiGraph-Vis"</em> are accepted to 
+    <em>NeurIPS 2025 Workshop on MATH-AI</em>.
+  </div>
+</div>
+
+
+    <div class="news-line">
+    <div class="news-date">Oct 25</div>
+    <div class="news-text">
+      Reviewed two papers for <em>NeurIPS Workshop MATH-AI 2025</em>.
+    </div>
+  </div>
+  
+  <div class="news-line">
+    <div class="news-date">Jul 25</div>
+    <div class="news-text">
+      Our paper <em>"Brains vs. Bytes: Evaluating LLM Proficiency in Olympiad Mathematics"</em> is accepted to COLM 2025.
+    </div>
+  </div>
+
+
+
+</section>
+
+
+    <!-- Research Experience -->
+    <section>
+      <h2>Research Experience</h2>
+
+      <div class="exp">
+  <img src="CMU.jpg" alt="Carnegie Mellon University">
+  <div class="details">
+    <h4>Carnegie Mellon University</h4>
+    <ul>
+      <li>Remote Research Assistant under supervision of Dr. Niloofar Mireshghallah</li>
+      <li>I develop an AI-driven system using agentic workflows to automatically evaluate proofs, analyze reasoning, detect errors, and assign fair partial-credit scores like human judges.</li>
+    </ul>
+  </div>
+  <div class="years">2025 – present</div>
+</div>
+<div class="exp">
+  <img src="SUT.png" alt="Sharif University of Technology">
+  <div class="details">
+    <h4>Sharif University of Technology</h4>
+    <ul>
+      <li>Research Assistant under supervision of Dr. Babak Khalaj</li>
+      <li>I develop scalable multi-agent reinforcement learning frameworks for coordination, communication, and adaptive decision-making among intelligent agents in complex dynamic environments.</li>
+    </ul>
+  </div>
+  <div class="years">2025 – present</div>
+</div>
+
+<div class="exp">
+  <img src="Sigma.png" alt="SigmaPulse">
+  <div class="details">
+    <h4>SigmaPulse</h4>
+    <ul>
+      <li>Founder & AI Research Engineer</li>
+      <li>I founded a startup focused on applying the latest advancements in artificial intelligence — including generative and multi-agent models — to financial data analysis, enabling more interpretable, adaptive, and context-aware predictions of market behavior.</li>
+    </ul>
+  </div>
+  <div class="years">2023 – present</div>
+</div>
+
+
+        <!-- Honors and Awards -->
+    <section>
+      <h2>Honors & Awards</h2>
+
+      <style>
+        .award {
+          display: flex;
+          align-items: center;
+          background: white;
+          border: 1px solid #ddd;
+          border-radius: 10px;
+          padding: 1.2rem 1.5rem;
+          margin-bottom: 1.2rem;
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+        .award:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        }
+        .award-icon {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background: #002147;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #ffcc00;
+          font-size: 1.5rem;
+          margin-right: 1.2rem;
+          flex-shrink: 0;
+        }
+        .award-details {
+          flex: 1;
+        }
+        .award-details h3 {
+          margin: 0;
+          color: #002147;
+          font-size: 1.1rem;
+        }
+        .award-details p {
+          margin: 0.3rem 0;
+          color: #555;
+        }
+        .award .years {
+          color: #444;
+          font-weight: bold;
+          font-size: 0.95rem;
+          margin-left: 1rem;
+          white-space: nowrap;
+        }
+        .award a {
+          text-decoration: none;
+          color: #002147;
+          font-weight: 600;
+        }
+        .award a:hover {
+          color: #ffcc00;
+        }
+      </style>
+
+<div class="award">
+  <div class="award-icon">🎓</div>
+  <div class="award-details">
+    <h3>
+      Ranked 4th<br>
+      in class (GPA), Isfahan University of Technology
+    </h3>
+  </div>
+  <div class="years">2020 – 2024</div>
+</div>
+
+
+      <div class="award">
+  <div class="award-icon">🧠</div>
+        <div class="award-details">
+          <h3>
+            <a href="https://drive.google.com/file/d/1hUL1uVM0OmB2bVbzdr00wGjTgcnLUBR7/view?usp=sharing" target="_blank">
+              Ranked 6th
+            </a>
+          </h3>
+          <p>ACM International Collegiate Programming Contest (ICPC), Tehran Regional</p>
+        </div>
+        <div class="years">2021 – 2022</div>
+      </div>
+
+
+
+      <div class="award">
+        <div class="award-icon">🥇</div>
+        <div class="award-details">
+          <h3>
+            <a href="https://drive.google.com/file/d/1-FUmgzG8zyDD2Fiq5RWhvLT0aT3Qnwwz/view?usp=sharing" target="_blank">
+              Gold Medal
+            </a>
+          </h3>
+          <p>20th Bulgaria International Mathematics Competition (BIMC), Iran Regional</p>
+        </div>
+        <div class="years">2013 – 2014</div>
+      </div>
+
+      <div class="award">
+        <div class="award-icon">🥇</div>
+        <div class="award-details">
+          <h3>Gold Medal</h3>
+          <p>2nd Mathematical Olympiad of Iranian Teenagers</p>
+        </div>
+        <div class="years">2012 – 2013</div>
+      </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+  &copy; 2025 Alireza Farhadi. All rights reserved. <br>
+  <span style="font-size: 0.85rem; color: #ddd;">Last updated: October 2025</span>
+</footer>
+
+  </div>
+
+  <!-- Right column (empty) -->
+  <div class="rightbar">
+    <!-- This remains empty -->
+  </div>
+
+  <script>
+function toggleAbstract(btn) {
+  const abstractBox = btn.parentElement.querySelector(".abstract-box");
+  if (abstractBox.style.display === "none" || abstractBox.style.display === "") {
+    abstractBox.style.display = "block";
+    btn.textContent = "Hide Summary";
+  } else {
+    abstractBox.style.display = "none";
+    btn.textContent = "Summary";
+  }
+}
+</script>
+
+
+</body>
+</html>
